@@ -1,0 +1,16 @@
+profiles {
+	gizmo {
+		process.executor = 'slurm'
+		apptainer.enabled = true
+		apptainer.autoMounts = true
+		workDir = '/fh/scratch/delete10/mccrone_j/work'
+
+		process {
+			withName: 'BCFTOOLS_SORT' {
+				ext.args = '--temp-dir /tmp/ --output-type z'
+				}
+			executor='slurm'
+		}
+	}
+
+}

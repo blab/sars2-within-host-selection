@@ -1,0 +1,9 @@
+params {
+  ivar_variants_args = '-t 0.01 -q 20 -m 10'
+}
+
+process {
+  withName: IVAR_VARIANTS {
+    ext.args = params.ivar_variants_args
+  }
+}
