@@ -1,0 +1,46 @@
+import re
+import csv
+import subprocess
+import sys
+
+def fetch_sra_data(project_id):
+    command = f"esearch -db sra -query {project_id} | efetch -format xml | xtract -pattern EXPERIMENT -element PRIMARY_ID DESIGN_DESCRIPTION -block RUN -element acc"
+    result = subprocess.run(command, shell=True, capture_output=True, text=True)
+    data_lines = result.stdout.strip().split('\n')
+    return data_lines
+
+def process_data(data_lines):
+    pattern = re.compile(r'\b(V\S*)', re.IGNORECASE)
+    output_data = []
+
+    for line in data_lines:
+        columns = line.split('\t')
+        sample_name = columns[0]
+        primer_info = columns[3] if len(columns) > 3 else ""
+        matched_words = pattern.findall(primer_info)
+        if matched_words:
+            primer = ' '.join(matched_words)
+            output_data.append([sample_name, primer])
+    
+    return output_data
+
+def write_to_csv(output_data, output_csv_file):
+    with open(output_csv_file, mode='w', newline='') as outfile:
+        writer = csv.writer(outfile)
+        writer.writerow(["Sample", "Primer"])
+        writer.writerows(output_data)
+
+def main():
+    if len(sys.argv) != 3:
+        print("to usee: can run python script.py <project_id> <output_csv_file>")
+        sys.exit(1)
+
+    project_id = sys.argv[1]
+    output_csv_file = sys.argv[2]
+
+    data_lines = fetch_sra_data(project_id)
+    output_data = process_data(data_lines)
+    write_to_csv(output_data, output_csv_file)
+
+if __name__ == "__main__":
+    main()
