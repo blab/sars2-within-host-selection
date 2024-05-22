@@ -1,0 +1,64 @@
+BCFTOOLS_QUERY:
+  bcftools: '1.16'
+BCFTOOLS_SORT:
+  bcftools: '1.16'
+BCFTOOLS_STATS:
+  bcftools: '1.16'
+BOWTIE2_ALIGN:
+  bowtie2: 2.4.4
+  pigz: '2.6'
+  samtools: 1.16.1
+BOWTIE2_BUILD:
+  bowtie2: 2.4.4
+COLLAPSE_PRIMERS:
+  python: 3.9.5
+CUSTOM_DUMPSOFTWAREVERSIONS:
+  python: 3.11.0
+  yaml: '6.0'
+CUSTOM_GETCHROMSIZES:
+  getchromsizes: 1.16.1
+FASTP:
+  fastp: 0.23.2
+IVAR_TRIM:
+  ivar: '1.4'
+IVAR_VARIANTS:
+  ivar: '1.4'
+IVAR_VARIANTS_TO_VCF:
+  python: 3.9.12
+MAKE_VARIANTS_LONG_TABLE:
+  python: 3.9.9
+MOSDEPTH_AMPLICON:
+  mosdepth: 0.3.3
+MOSDEPTH_GENOME:
+  mosdepth: 0.3.3
+PICARD_COLLECTMULTIPLEMETRICS:
+  picard: 3.0.0
+PLOT_MOSDEPTH_REGIONS_AMPLICON:
+  r-base: 4.0.3
+PLOT_MOSDEPTH_REGIONS_GENOME:
+  r-base: 4.0.3
+SAMPLESHEET_CHECK:
+  python: 3.9.5
+SAMTOOLS_FLAGSTAT:
+  samtools: 1.16.1
+SAMTOOLS_IDXSTATS:
+  samtools: 1.16.1
+SAMTOOLS_INDEX:
+  samtools: 1.16.1
+SAMTOOLS_SORT:
+  samtools: 1.16.1
+SAMTOOLS_STATS:
+  samtools: 1.16.1
+SNPEFF_ANN:
+  snpeff: 5.0e
+SNPEFF_BUILD:
+  snpeff: 5.0e
+SNPSIFT_EXTRACTFIELDS:
+  snpsift: '4.3'
+TABIX_BGZIP:
+  tabix: '1.12'
+TABIX_TABIX:
+  tabix: '1.12'
+Workflow:
+  Nextflow: 23.04.2
+  nf-core/viralrecon: 2.6.0

@@ -1,0 +1,36 @@
+## htsjdk.samtools.metrics.StringHeader
+# CollectMultipleMetrics --INPUT SRX17852074.ivar_trim.sorted.bam --OUTPUT SRX17852074.CollectMultipleMetrics --TMP_DIR tmp --VALIDATION_STRINGENCY LENIENT --REFERENCE_SEQUENCE SRX17852074.fasta --ASSUME_SORTED true --STOP_AFTER 0 --METRIC_ACCUMULATION_LEVEL ALL_READS --PROGRAM CollectAlignmentSummaryMetrics --PROGRAM CollectBaseDistributionByCycle --PROGRAM CollectInsertSizeMetrics --PROGRAM MeanQualityByCycle --PROGRAM QualityScoreDistribution --INCLUDE_UNPAIRED false --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+## htsjdk.samtools.metrics.StringHeader
+# Started on: Wed May 22 17:24:06 GMT 2024
+
+
+## HISTOGRAM	java.lang.Byte
+QUALITY	COUNT_OF_Q
+12	6171
+13	25098
+14	34700
+15	94473
+16	59912
+17	30569
+18	39493
+19	25969
+20	35706
+21	1647
+24	14802
+25	20351
+26	24348
+27	41607
+28	12658
+29	18433
+30	71678
+31	37302
+32	270197
+33	725277
+34	626211
+35	394250
+36	567691
+37	3607618
+38	7370364
+39	20581023
+40	54806
+
