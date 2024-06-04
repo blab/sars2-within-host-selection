@@ -1,0 +1,11 @@
+variant_id,gene_name,pfam_description,hgvs_p,annotation_highest_impact,cons_hmm_sars_cov_2,median_vaf,iqr_vaf,first_observation,last_observation,count_observations,score,pangolin_lineage,no_of_lineages,pangolin_hover
+22027:T>TG,S,"Betacoronavirus-like spike glycoprotein S1, N-terminal",p.E156fs,frameshift_variant,-1.03,0.103,0.0,2020-06-17,2022-03-13,8073,-9.266,,1,
+22645:T>A,S,"Spike receptor binding domain, betacoronavirus",p.C361*,stop_gained,-1.275,0.026,0.0,2020-01-01,2023-05-24,1364,-9.203,,1,
+18636:GA>G,ORF1ab,"Non-structural protein NSP15, coronavirus",p.K6125fs,frameshift_variant,-1.045,0.052,0.002,2020-03-06,2023-04-23,3132,-8.412,,1,
+8281:C>A,ORF1ab,"Coronavirus replicase NSP3, C-terminal",p.N2672K,missense_variant,-1.275,0.076,0.003,2021-01-18,2021-12-30,480,-7.872,,1,
+19210:A>G,ORF1ab,"Non-structural protein NSP15, coronavirus",p.I6315M,missense_variant,-1.045,0.042,0.0,2020-03-11,2023-06-13,1794,-7.829,,1,
+21684:A>C,S,"Betacoronavirus-like spike glycoprotein S1, N-terminal",p.K41T,missense_variant,-1.275,0.03,0.0,2020-11-15,2022-04-21,433,-7.74,,1,
+1968:C>A,ORF1ab,,p.T568K,missense_variant,-1.275,0.025,0.0,2020-11-12,2022-05-19,406,-7.658,,1,
+26524:T>G,M,,p.M1?,start_lost,-1.275,0.038,0.0,2020-01-01,2022-04-19,365,-7.522,,1,
+26523:AT>A,M,,p.M1fs,frameshift_variant,-1.275,0.039,0.0,2020-01-01,2020-05-06,361,-7.508,,1,
+28366:A>C,N,,p.E31D,missense_variant,-1.275,0.035,0.0,2020-11-27,2022-01-11,357,-7.494,,1,
